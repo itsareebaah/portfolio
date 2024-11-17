@@ -60,10 +60,17 @@
 <body>
  
     <nav class="navbar navbar-expand-lg navnavbar-light bg-light " >
-      <a class="navbar-brand" href="#">
-          <img src="girl.jpg" width="50" height="50" alt="">
-      </a>
-      
+      <div class="container-fluid">
+        <!-- Left part: Brand logo with the girl's image -->
+        <a class="navbar-brand" href="#">
+          <img src="girl.jpg" width="50" height="50" alt="Girl Image">
+        </a>
+        
+        <!-- Right part: Navbar toggler button (menu icon) -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <img src="nav.png" alt="Menu" style="width: 30px; height: 30px;">
+        </button>
+      </div>
     
     <!-- Use a different Bootstrap icon for the navbar toggler -->
 <button class="navbar-toggler" type="button" id="navbar-toggler" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -71,7 +78,9 @@
 </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        
           <ul class="navbar-nav ml-auto">
+
               <li class="nav-item">
                 <!-- Dropdown menu item -->
               <li class="nav-item dropdown">
@@ -118,10 +127,10 @@
   
               
           </ul>
-          <form class="form-inline my-2 my-lg-0">
+          <!-- <form class="form-inline my-2 my-lg-0">
               <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
               <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
+          </form> -->
       </div>
     
   </nav>
