@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Personal Introduction</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mdb.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .no1 {
+            height: 50vh; 
+            width: 100%;
+            background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%), url('gurl.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .no1 h1, .no1 p {
+            text-align: center;
+            color: #3b0c3a;
+        }
+
+        .card-hover:hover {
+            cursor: pointer;
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+        }
+
+        footer a {
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Media Queries */
+        @media (max-width: 992px) {
+            .navbar .nav-link {
+                font-size: 0.9rem;
+            }
+
+            .no1 {
+                height: 60vh; /* Slightly larger for medium screens */
+            }
+        }
+
+        @media (max-width: 768px) {
+            .no1 h1 {
+                font-size: 2rem;
+            }
+
+            .no1 p {
+                font-size: 1rem;
+                padding: 0 15px;
+            }
+
+            .navbar .nav-link {
+                font-size: 0.85rem;
+            }
+
+            .card-title {
+                font-size: 1.1rem;
+            }
+
+            .card-text {
+                font-size: 0.9rem;
+            }
+
+            footer .col-md-4 {
+                margin-bottom: 20px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .no1 h1 {
+                font-size: 1.5rem;
+            }
+
+            .no1 p {
+                font-size: 0.9rem;
+            }
+
+            .card-hover {
+                margin-bottom: 20px;
+            }
+
+            footer .row {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="girl.jpg" width="40" height="40" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="skill.html">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="project.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        More
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="no1 d-flex flex-column justify-content-center align-items-center">
+        <h1>Welcome to Areeba's Website</h1>
+        <p>Explore this page to know me better.<br>I am a frontend developer who loves photography and video editing.</p>
+    </div>
+
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-4 col-sm-6">
+                <div class="card card-hover">
+                    <img class="card-img-top img-fluid" src="amazon.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat for other cards -->
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer style="background-color: rgb(163, 79, 91); margin-top: 80px;">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Projects</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Amazon clone</a></li>
+                        <!-- Other projects -->
+                    </ul>
+                </div>
+                <!-- Repeat for other columns -->
+            </div>
+            <div class="text-center py-3">
+                <small>&copy; Copyright Ulster University 2024.</small>
+            </div>
+        </div>
+    </footer>
+
+    <script src="bootstrapjs.js"></script>
+    <script src="jquery.js"></script>
+    <script src="popper.js"></script>
+    <script src="mdbjs.js"></script>
+</body>
+</html>
