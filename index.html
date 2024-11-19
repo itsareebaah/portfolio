@@ -21,6 +21,32 @@
       background-size: cover;
       background-repeat: no-repeat;
   }
+  .navbar-brand:hover {
+    color: none;
+}
+
+.navbar-nav .nav-link {
+    color: white; 
+    transition: color 0.3s ease, transform 0.3s ease; 
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffd700; 
+    transform: scale(1.1); 
+}
+  @media (max-width:1600px){
+    .no1{
+      height: 500px;
+      width: 100%;
+    }
+  }
+  @media (max-width: 1400px) {
+    .no1 {
+        height: 500px;
+        width: 100%;
+    }
+}
+
   @media (max-width: 1200px) {
     .no1 {
         height: 400px;
@@ -52,9 +78,56 @@
         margin-right: 260px;
     }
    
+
+.navbar-brand {
+    font-family: Latin Modern Roman Italic; 
+    font-size: 2rem; 
+    font-weight: bold; 
+    color: white; 
+    text-decoration: none; 
+    text-transform: uppercase; 
 }
- 
-        
+
+.navbar-brand:hover {
+    color: rgb(209, 91, 209); 
+}
+
+.navbar-nav .nav-link {
+    color: white; 
+    transition: none; 
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffd700; 
+    transform: none; 
+}
+
+}
+.navbar-brand {
+    font-family: Latin Modern Roman Italic;
+       font-size: 2rem; 
+    font-weight: bold; 
+    color: black; 
+    text-decoration: none; 
+    text-transform: uppercase; 
+}
+
+.navbar-brand:hover {
+    color: rgb(209, 91, 209) /* Add a hover effect with a color change */
+}
+
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.5rem; /* Adjust font size for medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar-brand {
+        font-size: 1.2rem; /* Further reduce font size for small screens */
+    }
+}
+     
   </style>
 </head>
 <body>
@@ -62,10 +135,13 @@
     <nav class="navbar navbar-expand-lg navnavbar-light bg-light " >
       <div class="container-fluid">
         <!-- Left part: Brand logo with the girl's image -->
-        <a class="navbar-brand" href="#">
+        <!-- <a class="navbar-brand" href="#">
           <img src="girl.jpg" width="50" height="50" alt="Girl Image">
-        </a>
-        
+        </a> -->
+       
+          <a class="navbar-brand" href="#">Areeba</a>
+
+       
         <!-- Right part: Navbar toggler button (menu icon) -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <img src="nav.png" alt="Menu" style="width: 30px; height: 30px;">
@@ -87,7 +163,7 @@
                 <a style="color: white;" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     About
                 </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #bb0944; border-radius: 20px;">
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #ecaac0; border-radius: 20px;">
                     <a class="dropdown-item" href="about.html#s0">Myself</a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="about.html#s1">Hobbies</a>
@@ -97,7 +173,7 @@
                   <a style="color: white;" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       Skills
                   </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #c30a4e;border-radius: 20px;">
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color:  #ecaac0;border-radius: 20px;">
                       <a class="dropdown-item" href="skill.html">Html</a>
                       <div class="dropdown-divider"></div>
                       <a class="dropdown-item" href="skill.html">CSS</a>
@@ -111,7 +187,7 @@
                     <a style="color: white;" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Projects
                     </a>
-                    <div style="background-color: #ce0c5a;border-radius: 20px;" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <div style="background-color:  #ecaac0;border-radius: 20px;" class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="project.html">Amazone clone</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="project.html">University website</a>
@@ -136,10 +212,7 @@
   </nav>
   
     <div class="no1">
-        <!-- <h1 id="ho" style="font-family: 'Times New Roman', Times, serif; text-align: right; color: rgb(59, 12, 58); padding-top: 20px; padding-right: 20px; font-size: 62px;" >Welcome to <br>Areeba's website
-        </h1>
-        <p id="p1" style="font-family: 'Times New Roman', Times, serif;  color: rgb(59, 12, 58); text-align: center; padding-left: 900px; font-size: 16px;">Explore this page to know me better <br>I am a frontend developer who loves photography <br>and video editing</p>
-        </div> -->
+       
     </div>   
     
     
