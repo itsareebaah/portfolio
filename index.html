@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="mdb.css">
     <link rel="stylesheet" href="style.css">
     
-    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     
 <!-- Important!!!!! -->
     <!-- Complete website is made through self work using bootstrap and css where needed, no theme is used -->
@@ -34,6 +34,7 @@
     color: #ffd700; 
     transform: scale(1.1); 
 }
+
   @media (max-width:1600px){
     .no1{
       height: 500px;
@@ -54,7 +55,6 @@
     }
 }
 
-/* Media query for devices with a max width of 992px */
 @media (max-width: 992px) {
     .no1 {
         height: 350px;
@@ -62,7 +62,7 @@
     }
 }
 
-/* Media query for devices with a max width of 768px */
+
 @media (max-width: 768px) {
     .no1 {
         height: 300px;
@@ -70,28 +70,13 @@
     }
 }
 
-/* Media query for devices with a max width of 480px */
+
 @media (max-width: 480px) {
     .no1 {
         height: 250px;
         width: 100%;
         margin-right: 260px;
     }
-   
-
-.navbar-brand {
-    font-family: Latin Modern Roman Italic; 
-    font-size: 2rem; 
-    font-weight: bold; 
-    color: white; 
-    text-decoration: none; 
-    text-transform: uppercase; 
-}
-
-.navbar-brand:hover {
-    color: rgb(209, 91, 209); 
-}
-
 .navbar-nav .nav-link {
     color: white; 
     transition: none; 
@@ -127,7 +112,28 @@
         font-size: 1.2rem; /* Further reduce font size for small screens */
     }
 }
-     
+
+/* General alignment for nav items */
+.navbar-nav .nav-item {
+    margin-right: 15px; /* Space between nav items */
+    display: flex;
+    align-items: center; /* Ensures text and icons align vertically */
+}
+
+/* Align the icons and text within nav links */
+.navbar-nav .nav-link {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px; /* Adjust padding as needed */
+}
+
+/* Adjust icon spacing */
+.navbar-nav .nav-link i {
+    margin-right: 5px; /* Space between icon and text */
+    font-size: 1.2rem; /* Uniform icon size */
+}
+
+
   </style>
 </head>
 <body>
@@ -147,66 +153,82 @@
           <img src="nav.png" alt="Menu" style="width: 30px; height: 30px;">
         </button>
       </div>
-    
-    <!-- Use a different Bootstrap icon for the navbar toggler -->
-<button class="navbar-toggler" type="button" id="navbar-toggler" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-  <i class="bi bi-list"></i> 
-</button>
+
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         
-          <ul class="navbar-nav ml-auto">
+          <ul class="navbar-nav ml-auto" style="margin-right: 15px;">
 
               <li class="nav-item">
-                <!-- Dropdown menu item -->
-              <li class="nav-item dropdown">
-                <a style="color: white;" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    About
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #ecaac0; border-radius: 20px;">
-                    <a class="dropdown-item" href="about.html#s0">Myself</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="about.html#s1">Hobbies</a>
-                   
-                </div>
+              
                 <li class="nav-item dropdown">
-                  <a style="color: white;" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Skills
+                  <a style="color: white;" class="nav-link dropdown-toggle" href="#" id="navbarDropdownAbout" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="bi bi-file-earmark-person-fill"></i> About
                   </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color:  #ecaac0;border-radius: 20px;">
-                      <a class="dropdown-item" href="skill.html">Html</a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownAbout" style="background-color: #ecaac0; border-radius: 20px;">
+                      <a class="dropdown-item" href="about.html#s0">
+                          <i class="bi bi-person"></i> Myself
+                      </a>
                       <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="skill.html">CSS</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="skill.html">Java script</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="skill.html">Bootstrap</a>
-                     
+                      <a class="dropdown-item" href="about.html#s1">
+                          <i class="bi bi-palette-fill"></i> Hobbies
+                      </a>
                   </div>
-                  <li class="nav-item dropdown">
-                    <a style="color: white;" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Projects
-                    </a>
-                    <div style="background-color:  #ecaac0;border-radius: 20px;" class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="project.html">Amazone clone</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="project.html">University website</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="project.html">Clothing website</a>
-                       
-                    </div>
-                  
-              
-              <li class="nav-item">
-                  <a style="color: white;" class="nav-link" href="contact.html">Contact</a>
               </li>
-  
-              
+      
+              <!-- Skills Section -->
+              <li class="nav-item dropdown">
+                  <a style="color: white;" class="nav-link dropdown-toggle" href="#" id="navbarDropdownSkills" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="bi bi-lightbulb"></i> Skills
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownSkills" style="background-color: #ecaac0; border-radius: 20px;">
+                      <a class="dropdown-item" href="skill.html">
+                          <i class="bi bi-filetype-html"></i> HTML
+                      </a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="skill.html">
+                          <i class="bi bi-filetype-css"></i> CSS
+                      </a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="skill.html">
+                          <i class="bi bi-terminal"></i> JavaScript
+                      </a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="skill.html">
+                          <i class="bi bi-box"></i> Bootstrap
+                      </a>
+                  </div>
+              </li>
+      
+              <!-- Projects Section -->
+              <li class="nav-item dropdown">
+                  <a style="color: white;" class="nav-link dropdown-toggle" href="#" id="navbarDropdownProjects" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="bi bi-folder"></i> Projects
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownProjects" style="background-color: #ecaac0; border-radius: 20px;">
+                      <a class="dropdown-item" href="project.html">
+                          <i class="bi bi-bag"></i> Amazon Clone
+                      </a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="project.html">
+                          <i class="bi bi-mortarboard"></i> University Website
+                      </a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="project.html">
+                          <i class="bi bi-shop"></i> Clothing Website
+                      </a>
+                  </div>
+              </li>
+      
+              <!-- Contact Section -->
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html" style="color: white; display: flex; align-items: center;">
+                    <i class="bi bi-telephone" style="margin-right: 5px;"></i> Contact
+                </a>
+            </li>
+            
+            
           </ul>
-          <!-- <form class="form-inline my-2 my-lg-0">
-              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form> -->
       </div>
     
   </nav>
