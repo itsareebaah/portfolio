@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Projects Portfolio</title>
+    <link href="bootstrap.css" rel="stylesheet">
+    <link href="mdb.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+    <style>
+        .project-section {
+            padding: 80px 0;
+            background-color: #fff0f5;
+        }
+        .project-card {
+            margin-bottom: 30px;
+            transition: transform 0.3s;
+            background-color: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(255, 105, 180, 0.1);
+        }
+        .project-card:hover {
+            transform: translateY(-10px);
+        }
+        .project-img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+        .tech-stack {
+            margin-top: 15px;
+        }
+        .tech-badge {
+            margin-right: 5px;
+            margin-bottom: 5px;
+            background-color: #ff69b4;
+        }
+        .section-title {
+            color: #ff69b4;
+            margin-bottom: 40px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .project-description {
+            color: #666;
+            line-height: 1.6;
+        }
+        .app-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .gallery-img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s;
+            box-shadow: 0 4px 6px rgba(255, 105, 180, 0.1);
+        }
+        .gallery-img:hover {
+            transform: scale(1.05);
+        }
+        .card-title {
+            color: #ff69b4;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="graphic-design.html">Graphic Design</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="app-projects.html">App Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="bg-dark text-white text-center py-5 mt-5">
+        <div class="container">
+            <h1 class="display-4">App Development Projects</h1>
+            <p class="lead">Showcasing my mobile and web application development work</p>
+        </div>
+    </header>
+
+    <!-- Projects Section -->
+    <section class="project-section">
+        <div class="container">
+            <!-- E-Learning App -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <h2 class="section-title">LEARNERA - E-Learning Platform</h2>
+                    <div class="card project-card">
+                        <div class="card-body">
+                            <h5 class="card-title">LEARNERA E-Learning Platform</h5>
+                            <p class="project-description">A comprehensive e-learning platform designed to provide an interactive and engaging learning experience. Features include course management, progress tracking, and interactive assessments.</p>
+                            <div class="tech-stack">
+                                <span class="badge tech-badge">React Native</span>
+                                <span class="badge tech-badge">Firebase</span>
+                                <span class="badge tech-badge">Node.js</span>
+                                <span class="badge tech-badge">MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app-gallery">
+                        <img src="WhatsApp Image 2025-06-05 at 13.14.27_2fd06f95.jpg" class="gallery-img" alt="LEARNERA App Screenshot 1">
+                        <img src="WhatsApp Image 2025-06-05 at 13.14.27_964b7880.jpg" class="gallery-img" alt="LEARNERA App Screenshot 2">
+                        <img src="WhatsApp Image 2025-06-05 at 13.14.27_98a87e56.jpg" class="gallery-img" alt="LEARNERA App Screenshot 3">
+                        <img src="WhatsApp Image 2025-06-05 at 13.14.27_a10a1bbb.jpg" class="gallery-img" alt="LEARNERA App Screenshot 4">
+                        <img src="WhatsApp Image 2025-06-05 at 13.14.27_5ff1d8ba.jpg" class="gallery-img" alt="LEARNERA App Screenshot 5">
+                        <img src="WhatsApp Image 2025-06-05 at 13.14.27_a176fb6d.jpg" class="gallery-img" alt="LEARNERA App Screenshot 6">
+                        <img src="WhatsApp Image 2025-06-05 at 13.14.27_4ca27af3.jpg" class="gallery-img" alt="LEARNERA App Screenshot 7">
+                        <img src="WhatsApp Image 2025-06-05 at 13.14.27_4f3e4808.jpg" class="gallery-img" alt="LEARNERA App Screenshot 8">
+                        <img src="WhatsApp Image 2025-06-05 at 13.14.27_f0613fc0.jpg" class="gallery-img" alt="LEARNERA App Screenshot 9">
+                        <img src="WhatsApp Image 2025-06-05 at 13.14.27_84e94900.jpg" class="gallery-img" alt="LEARNERA App Screenshot 10">
+                        <img src="WhatsApp Image 2025-06-05 at 13.14.27_2202f557.jpg" class="gallery-img" alt="LEARNERA App Screenshot 11">
+                        <img src="WhatsApp Image 2025-06-05 at 13.14.27_3452ca4a.jpg" class="gallery-img" alt="LEARNERA App Screenshot 12">
+                        <img src="WhatsApp Image 2025-06-05 at 13.14.27_f6edacd9.jpg" class="gallery-img" alt="LEARNERA App Screenshot 13">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Car Booking App -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <h2 class="section-title">Car Booking Application</h2>
+                    <div class="card project-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Car Booking Application</h5>
+                            <p class="project-description">A modern car booking application that allows users to browse, book, and manage their car rentals. Features include real-time availability, payment integration, and booking management.</p>
+                            <div class="tech-stack">
+                                <span class="badge tech-badge">Flutter</span>
+                                <span class="badge tech-badge">Dart</span>
+                                <span class="badge tech-badge">Firebase</span>
+                                <span class="badge tech-badge">REST API</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hospital Management System -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <h2 class="section-title">Hospital Management System</h2>
+                    <div class="card project-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Hospital Management System</h5>
+                            <p class="project-description">A comprehensive hospital management system built with .NET and SQL Server. Features include patient management, appointment scheduling, and medical records management.</p>
+                            <div class="tech-stack">
+                                <span class="badge tech-badge">.NET</span>
+                                <span class="badge tech-badge">C#</span>
+                                <span class="badge tech-badge">SQL Server</span>
+                                <span class="badge tech-badge">Entity Framework</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app-gallery">
+                        <img src="Screenshot 2025-06-05 132736.png" class="gallery-img" alt="Hospital Management System Screenshot 1">
+                        <img src="Screenshot 2025-06-05 132709.png" class="gallery-img" alt="Hospital Management System Screenshot 2">
+                        <img src="Screenshot 2025-06-05 132635.png" class="gallery-img" alt="Hospital Management System Screenshot 3">
+                        <img src="Screenshot 2025-06-05 132619.png" class="gallery-img" alt="Hospital Management System Screenshot 4">
+                        <img src="Screenshot 2025-06-05 132538.png" class="gallery-img" alt="Hospital Management System Screenshot 5">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p class="mb-0">© 2024 Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="jquery.js"></script>
+    <script src="popper.js"></script>
+    <script src="bootstrapjs.js"></script>
+    <script src="mdbjs.js"></script>
+</body>
+</html> 

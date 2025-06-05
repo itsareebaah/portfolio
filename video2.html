@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Make the video container responsive */
+        .video-container {
+            background-color: rgb(254, 206, 214);
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+
+        /* Make the video responsive */
+        video {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="video-container">
+        <a href="video2.mp4">
+            <!-- Video displayed directly on the page -->
+            <video controls>
+                <source src="video2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </a>
+    </div>
+</body>
+</html>
